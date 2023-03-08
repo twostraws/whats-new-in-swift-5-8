@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<pages>
+    <page name='Introduction'/>
+        <page name='Lift all limitations on variables in result builders'/>
+        <page name='Function back deployment'/>
+        <page name='Allow implicit self for weak self captures, after self is unwrapped'/>
+        <page name='Concise magic file names'/>
+        <page name='Opening existential arguments to optional parameters'/>
+        <page name='Collection downcasts in cast patterns are now supported'/>
+    </pages>
+</playground>
