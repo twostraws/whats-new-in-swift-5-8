@@ -74,7 +74,7 @@ struct SubscriberView: View {
 This approach solves problems that would appear in the alternatives:
 
 - If we didn’t use `lazy`, then `fetchUsername()` would be called in all three cases of `state`, even when it isn’t used in one.
-- If we removed `lazy` and placed the called to `fetchUsername()` *inside* the two cases then we would be duplicating code – not a massive problem with a simple one liner, but you can imagine how this would cause problems in more complex code.
+- If we removed `lazy` and placed the call to `fetchUsername()` *inside* the two cases then we would be duplicating code – not a massive problem with a simple one liner, but you can imagine how this would cause problems in more complex code.
 - If we moved `user` out to a computed property, it would be called a second time when the user clicked the "Subscribe now" button.
 
 This change also allows us to use property wrappers and local computed properties inside result builders, although I suspect they will be less useful. For example, this kind of code is now allowed: 

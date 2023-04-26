@@ -10,7 +10,7 @@
 
 For example, in the code below we have a closure that captures `self` weakly, but then unwraps `self` immediately:
 */
-import class Foundation.Timer
+import Foundation
 
 class TimerController {
     var timer: Timer?
